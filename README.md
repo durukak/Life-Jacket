@@ -1,2 +1,0 @@
-# Life-Jacket
-Web development

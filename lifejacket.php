@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HomePage</title>
+    <title>LIFEJACKET</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -14,18 +14,29 @@ session_start();
 if((!isset($_SESSION['username'])) && (!isset($_SESSION['name'])) && (!isset($_SESSION['phone']))) {?>
   <header class="mainHeader">
     <nav><ul>
-      <li class="active"><a href="homepage.html">LIFE JACKET</a></li>
+      <li class="active"><a href="lifejacket.php">LIFE JACKET</a></li>
       <li><a href="login.html">Login</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li><a href="trip.html">Trips</a></li>
+      <li><a href="trips.php">Trips</a></li>
       <li><a href="member.html">Members</a></li>
       <li><a href="mypage.html">My Page</a></li>
+    </ul></nav>
+  </header>
+
+  <?php } else {?>
+    <?php
+    if((!isset($_SESSION['username'])) && (!isset($_SESSION['name'])) && (!isset($_SESSION['phone']))) ?>
+    <header class="mainHeader">
+    <nav><ul>
+      <li class="active"><a href="lifejacket.php">LIFE JACKET</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="trips.php">Trips</a></li>
+      <li><a href="member.html">Members</a></li>
+      <li><a href="mypage.html">My Page</a></li>
+      <a href="logout.php">Logout</a><br>
 
     </ul></nav>
-
   </header>
-  <?php } else {?>
-    <a href="logout.php">Logout</a><br>
-  <?php } ?>
+  <?php } ?> 
   </body>
   </html>

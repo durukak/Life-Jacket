@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <form method ="post" action ="/signup.php">
-        Username<input type ="text" name="username"><br>
-        Password<input type ="text" name="password"><br>
-        Name<input type ="text" name="name"><br>
-        Phone<input type ="int" name="phone"><br>
-        <input type ="submit">
-        </form>
-    </body>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <style type="text/css">
+   textarea, input {
+       height: 39px;
+       font-size: 14px;
+       color: #333;
+       padding: 0px 10px;
+       border: 1px solid #d2d7e0;
+       border-radius: 3px;
+       -moz-border-radius: 3px;
+       -webkit-border-radius: 3px;
+   }
+   .frm{
+       width: 430px;
+       margin: 50px auto 0px;
+       padding: 40px 55px;
+       border: 10px solid #315d9f;
+   }
+   
+   body{
+      font-size : 20px;
+   }
+   .navbar-brand{
+      font-size: 30px;
+   }
+   </style>
+</head>
+<body>
+       <div style="padding: 100px;">
+          <div  class="navbar-header">
+            <a class="navbar-brand" href="lifejacket.php">LIFE JACKET</a>
+          </div>
+         <nav nav class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="about.html">About Us</a></li>
+               <li><a href="trips.php">Trips</a></li>
+               <li><a href="search.php">Members</a></li>
+               <li><a href="mypage.html">My Page</a></li>
+            </ul>
+         </nav>
+      </div>
+   <form class="frm" method="post" action ="/signup.php">
+      <div id="container">
+      <table>
+         <tr>
+            <td>
+               <span style="padding-right: 15px;">Username</span>
+            </td>
+            <td>
+               <input type="text" name="username"><br> 
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <span>Password</span>
+            </td>
+            <td>
+               <input type="text" name="password"><br> 
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <span>Name</span>
+            </td>
+            <td>
+               <input type="text" name="name"><br> 
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <span>Phone</span>
+            </td>
+            <td>
+               <input type="int" name="phone"><br> 
+            </td>
+         </tr>
+      </table>
+      <br>
+       <input style="font-size: 20px ;" type="submit" class="btn btn-info btn-block" value="sign up"> 
+      </div>
+   </form>
+</body>
 </html>

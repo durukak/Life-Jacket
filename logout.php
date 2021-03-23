@@ -2,6 +2,6 @@
 session_start();
 $session=session_destroy();
 if($session){
-    header('Location: ./lifejacket.php');
+    echo "<script>alert('Logout successfully ');location.href='lifejacket.php';</script>";
 }
 ?>

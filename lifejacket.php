@@ -131,11 +131,6 @@ if ((! isset($_SESSION['username'])) && (! isset($_SESSION['name'])) && (! isset
                             <a class="nav-link color-grey-hover" href="logout.php">LOGOUT</a>
                          </li>
                       </ul>
-                      <ul class="navbar-nav">
-                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="images/search_icon.png" alt="#" /></a>
-                         </li>
-                      </ul>
                    </div>
                 </nav>
              </div>

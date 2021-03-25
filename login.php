@@ -14,11 +14,11 @@ if($res -> num_rows > 0) {
     $_SESSION['phone'] = $row["phone"];
     if(isset($_SESSION['username'])&& isset($_SESSION['name']) && isset($_SESSION['phone']))
     {
-    echo"<script>location.href='lifejacket.php';</script>";
+    echo"<script>alert('login successfully');location.href='lifejacket.php';</script>";
 } else {
-    echo "<script>alert('invalid input, please try again');</script>";
+    echo "<script>alert('invalid input, please try again');location.href='login.html';</script>";
 }
 } else {
-    echo "<script>alert('invalid input, please try again');</script>";
+    echo "<script>alert('invalid input, please try again');location.href='login.html';</script>";
 }
 ?>
